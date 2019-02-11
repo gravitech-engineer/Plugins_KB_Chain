@@ -24,4 +24,4 @@
      
 ### Other 
 
-Looking for Sensor [Shop Now](https://www.kidbright.io/shop)
+Looking for KB Chain [Shop Now](https://www.kidbright.io/shop)

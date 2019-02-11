@@ -14,7 +14,7 @@
 
 
 ### Installing
-* ติดตั้ง KidBright IDE ล่าสุดจาก https://www.kid-bright.org/file/download/KidBright-Installer-windows.zip
+* ติดตั้ง KidBright IDE เวอร์ชั่นล่าสุดจาก https://www.kid-bright.org/file/download/KidBright-Installer-windows.zip
 * ไปที่ตำแหน่งที่อยู่ของโฟลเดอร์ plugin โดยคลิกขวาที่ ICON ของโปรแกรม KidBright IDE บน Desktop แล้วไปที่ Open file location จากนั้นไปที่ app-1.3.2->resource->app->kbide->plugins
 * ดาวน์โหลด plugin จาก [GitHub](https://github.com/gravitech-engineer/Plugins_KB_Chain)
 * เปิดไฟล์ที่ดาวน์โหลดไว้แล้วลากทั้งหมดลงในโฟลเดอร์ plugins

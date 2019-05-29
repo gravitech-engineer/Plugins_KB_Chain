@@ -10,6 +10,7 @@
   * KB Chain Sound Detector
   * KB Chain UVA/UVB Sensor
   * KB Chain VOC Sensor
+  * KB Chain Motor
 
 
 

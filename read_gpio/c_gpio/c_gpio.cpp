@@ -53,12 +53,13 @@ void c_gpio::process(Driver *drv) {
 //  uart_write_bytes(UART_NUM_0, (const char*)buffer, strlen(buffer));
 }
 
-
+/* 
 void c_gpio::set_gpio(int pin,int state)
 {
   if (pin == 18)
   {
     gpio_set_level(GPIO_NUM_18,state);
+
   }else if (pin == 19)
   {
     gpio_set_level(GPIO_NUM_19,state);
@@ -67,7 +68,7 @@ void c_gpio::set_gpio(int pin,int state)
     gpio_set_level(GPIO_NUM_23,state);
   }
   
-}
+}*/
 
 double c_gpio::get_gpio(int gpin)
 {

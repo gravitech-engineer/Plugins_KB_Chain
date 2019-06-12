@@ -25,7 +25,7 @@ class c_gpio : public Device {
         bool prop_read(int index, char *value);
         bool prop_write(int index, char *value);
         // method
-        void set_gpio(int pin,int state);
+        // void set_gpio(int pin,int state);
         double get_gpio(int gpin);
 };
 

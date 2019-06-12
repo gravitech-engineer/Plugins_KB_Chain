@@ -53,37 +53,44 @@ void c_gpio::process(Driver *drv) {
 //  uart_write_bytes(UART_NUM_0, (const char*)buffer, strlen(buffer));
 }
 
-/* 
+
 void c_gpio::set_gpio(int pin,int state)
 {
+  
   if (pin == 18)
   {
+    gpio_set_direction(GPIO_NUM_18,GPIO_MODE_OUTPUT);
     gpio_set_level(GPIO_NUM_18,state);
 
   }else if (pin == 19)
   {
+    gpio_set_direction(GPIO_NUM_18,GPIO_MODE_OUTPUT);
     gpio_set_level(GPIO_NUM_19,state);
   }else if (pin == 23)
   {
+    gpio_set_direction(GPIO_NUM_18,GPIO_MODE_OUTPUT);
     gpio_set_level(GPIO_NUM_23,state);
   }
   
-}*/
+}
 
 double c_gpio::get_gpio(int gpin)
 {
   
   if (gpin == 18)
   {
+    gpio_set_direction(GPIO_NUM_18,GPIO_MODE_INPUT);
     return (gpio_get_level(GPIO_NUM_18));
     // return = 10;
   }
   else if (gpin == 19)
   {
+    gpio_set_direction(GPIO_NUM_18,GPIO_MODE_INPUT);
     return (gpio_get_level(GPIO_NUM_19));
   }
   else if (gpin == 23)
   {
+    gpio_set_direction(GPIO_NUM_18,GPIO_MODE_INPUT);
     return (gpio_get_level(GPIO_NUM_23));
   }
   

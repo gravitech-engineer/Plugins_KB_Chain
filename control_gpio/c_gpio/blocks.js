@@ -1,4 +1,4 @@
-/*Blockly.Blocks['set_gpio'] = {
+Blockly.Blocks['set_gpio'] = {
   init: function() {
     this.appendDummyInput()
         .appendField(Blockly.Msg.set_gpio_TEXT_TITLE)
@@ -12,7 +12,7 @@
  this.setTooltip(Blockly.Msg.set_gpio_TEXT_TOOLTIP);
  this.setHelpUrl("");
   }
-};*/
+};
 
 
 Blockly.Blocks['get_gpio'] = {

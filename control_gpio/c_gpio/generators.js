@@ -1,10 +1,10 @@
-/*Blockly.JavaScript['set_gpio'] = function(block) {
+Blockly.JavaScript['set_gpio'] = function(block) {
   var dropdown_pin = block.getFieldValue('pin');
   var dropdown_state = block.getFieldValue('state');
   // TODO: Assemble JavaScript into code variable.
   var code = 'DEV_IO.c_gpio()' + '.set_gpio(' + dropdown_pin + ',' + dropdown_state + ');\n';
   return code;
-};*/
+};
 
 
 

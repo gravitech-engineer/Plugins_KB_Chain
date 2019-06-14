@@ -74,26 +74,26 @@ void c_gpio::set_gpio(int pin,int state)
   
 }
 
-double c_gpio::get_gpio(int gpin)
+int c_gpio::get_gpio(int gpin)
 {
   
   if (gpin == 18)
   {
     gpio_set_direction(GPIO_NUM_18,GPIO_MODE_INPUT);
-    return (gpio_get_level(GPIO_NUM_18));
+    temp_cc = (gpio_get_level(GPIO_NUM_18));
     // return = 10;
   }
   else if (gpin == 19)
   {
     gpio_set_direction(GPIO_NUM_18,GPIO_MODE_INPUT);
-    return (gpio_get_level(GPIO_NUM_19));
+    temp_cc = (gpio_get_level(GPIO_NUM_19));
   }
   else if (gpin == 23)
   {
     gpio_set_direction(GPIO_NUM_18,GPIO_MODE_INPUT);
-    return (gpio_get_level(GPIO_NUM_23));
+    temp_cc = (gpio_get_level(GPIO_NUM_23));
   }
-  
-return 0;
+  return temp_cc;
+  temp_cc = 0;
 }
 

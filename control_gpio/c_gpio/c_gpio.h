@@ -12,7 +12,7 @@ class c_gpio : public Device {
         TickType_t tickcnt, polling_tickcnt;
 
     public:
-    double temp_c;
+    double temp_cc;
         // constructor
         c_gpio();
         // override
@@ -26,7 +26,7 @@ class c_gpio : public Device {
         bool prop_write(int index, char *value);
         // method
         void set_gpio(int pin,int state);
-        double get_gpio(int gpin);
+        int get_gpio(int gpin);
 };
 
 #endif

@@ -11,7 +11,7 @@
   * KB Chain UVA/UVB Sensor
   * KB Chain VOC Sensor
   * KB Chain Motor
-
+  * KB Chain Thermal Infrared Sensor
 
 
 ### Installing

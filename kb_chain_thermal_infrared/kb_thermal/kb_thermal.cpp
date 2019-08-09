@@ -118,7 +118,7 @@ void kb_thermal::process(Driver *drv)
 				temp |= data[1] << 8;
 				tempC = temp * 0.02;
 				RawData = (float)tempC - 273.15;
-				// ConVData = roundf(RawData * 100)/ 100;
+				ConVData = roundf(RawData * 100)/ 100;
 				
 			}
 			else

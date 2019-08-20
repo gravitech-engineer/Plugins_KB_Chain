@@ -1,0 +1,882 @@
+<xml xmlns="http://www.w3.org/1999/xhtml"><block type="factory_base" id="?TlmZ`DfbWjVq_9/ctT-" deletable="false" movable="false" x="10" y="10">
+    <mutation connections="BOTH"></mutation>
+    <field name="NAME">kb_robot_motor_forward</field>
+    <field name="INLINE">INT</field>
+    <field name="CONNECTIONS">BOTH</field>
+    <statement name="INPUTS">
+      <block type="input_value" id="RB)Rh0gs)KT6GrDNYkg+">
+        <field name="INPUTNAME">speed</field>
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="ILbEv0U*|^2W*1f/,qy0">
+            <field name="TEXT">Move Forward at speed</field>
+          </block>
+        </statement>
+        <value name="TYPE">
+          <shadow type="type_null" id="ev/{OBO482WN[+{S!)g2"></shadow>
+          <block type="type_number" id="z6:ou76irI[Wr}4{+/Tw"></block>
+        </value>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="]%kZbcOErUi31!e;Kx!(" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="Ic)801qcX%I?Ctt`X(qP" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="TOPTYPE">
+      <shadow type="type_null" id="`:VcS+?{*6pw~+kkD^7)"></shadow>
+    </value>
+    <value name="BOTTOMTYPE">
+      <shadow type="type_null" id=",KGabL,?rw1SQ@`xzgIk"></shadow>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="-`_[x.:wY2a}(_0-*.b9">
+        <mutation colour="#805ba5"></mutation>
+        <field name="HUE">270</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="?TlmZ`DfbWjVq_9/ctT-" deletable="false" movable="false" x="10" y="10">
+    <mutation connections="BOTH"></mutation>
+    <field name="NAME">kb_robot_motor_backward</field>
+    <field name="INLINE">INT</field>
+    <field name="CONNECTIONS">BOTH</field>
+    <statement name="INPUTS">
+      <block type="input_value" id="RB)Rh0gs)KT6GrDNYkg+">
+        <field name="INPUTNAME">speed</field>
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="ILbEv0U*|^2W*1f/,qy0">
+            <field name="TEXT">Move Backward at speed</field>
+          </block>
+        </statement>
+        <value name="TYPE">
+          <shadow type="type_null" id="ev/{OBO482WN[+{S!)g2"></shadow>
+          <block type="type_number" id="td0vn$+s-U)^HNgr)k7a"></block>
+        </value>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="]%kZbcOErUi31!e;Kx!(" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="Ic)801qcX%I?Ctt`X(qP" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="TOPTYPE">
+      <shadow type="type_null" id="`:VcS+?{*6pw~+kkD^7)"></shadow>
+    </value>
+    <value name="BOTTOMTYPE">
+      <shadow type="type_null" id=",KGabL,?rw1SQ@`xzgIk"></shadow>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="-`_[x.:wY2a}(_0-*.b9">
+        <mutation colour="#805ba5"></mutation>
+        <field name="HUE">270</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="?TlmZ`DfbWjVq_9/ctT-" deletable="false" movable="false" x="10" y="10">
+    <mutation connections="BOTH"></mutation>
+    <field name="NAME">kb_robot_motor_trun_left</field>
+    <field name="INLINE">INT</field>
+    <field name="CONNECTIONS">BOTH</field>
+    <statement name="INPUTS">
+      <block type="input_value" id="RB)Rh0gs)KT6GrDNYkg+">
+        <field name="INPUTNAME">speed</field>
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="ILbEv0U*|^2W*1f/,qy0">
+            <field name="TEXT">Turn Left at speed</field>
+          </block>
+        </statement>
+        <value name="TYPE">
+          <shadow type="type_null" id="ev/{OBO482WN[+{S!)g2"></shadow>
+          <block type="type_number" id="td0vn$+s-U)^HNgr)k7a"></block>
+        </value>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="]%kZbcOErUi31!e;Kx!(" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="Ic)801qcX%I?Ctt`X(qP" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="TOPTYPE">
+      <shadow type="type_null" id="`:VcS+?{*6pw~+kkD^7)"></shadow>
+    </value>
+    <value name="BOTTOMTYPE">
+      <shadow type="type_null" id=",KGabL,?rw1SQ@`xzgIk"></shadow>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="-`_[x.:wY2a}(_0-*.b9">
+        <mutation colour="#805ba5"></mutation>
+        <field name="HUE">270</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="?TlmZ`DfbWjVq_9/ctT-" deletable="false" movable="false" x="10" y="10">
+    <mutation connections="BOTH"></mutation>
+    <field name="NAME">kb_robot_motor_trun_right</field>
+    <field name="INLINE">INT</field>
+    <field name="CONNECTIONS">BOTH</field>
+    <statement name="INPUTS">
+      <block type="input_value" id="RB)Rh0gs)KT6GrDNYkg+">
+        <field name="INPUTNAME">speed</field>
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="ILbEv0U*|^2W*1f/,qy0">
+            <field name="TEXT">Turn Right at speed</field>
+          </block>
+        </statement>
+        <value name="TYPE">
+          <shadow type="type_null" id="ev/{OBO482WN[+{S!)g2"></shadow>
+          <block type="type_number" id="td0vn$+s-U)^HNgr)k7a"></block>
+        </value>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="]%kZbcOErUi31!e;Kx!(" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="Ic)801qcX%I?Ctt`X(qP" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="TOPTYPE">
+      <shadow type="type_null" id="`:VcS+?{*6pw~+kkD^7)"></shadow>
+    </value>
+    <value name="BOTTOMTYPE">
+      <shadow type="type_null" id=",KGabL,?rw1SQ@`xzgIk"></shadow>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="-`_[x.:wY2a}(_0-*.b9">
+        <mutation colour="#805ba5"></mutation>
+        <field name="HUE">270</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="?TlmZ`DfbWjVq_9/ctT-" deletable="false" movable="false" x="10" y="10">
+    <mutation connections="BOTH"></mutation>
+    <field name="NAME">kb_robot_motor_spin_left</field>
+    <field name="INLINE">INT</field>
+    <field name="CONNECTIONS">BOTH</field>
+    <statement name="INPUTS">
+      <block type="input_value" id="RB)Rh0gs)KT6GrDNYkg+">
+        <field name="INPUTNAME">speed</field>
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="ILbEv0U*|^2W*1f/,qy0">
+            <field name="TEXT">Spin Left at speed</field>
+          </block>
+        </statement>
+        <value name="TYPE">
+          <shadow type="type_null" id="ev/{OBO482WN[+{S!)g2"></shadow>
+          <block type="type_number" id="td0vn$+s-U)^HNgr)k7a"></block>
+        </value>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="]%kZbcOErUi31!e;Kx!(" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="Ic)801qcX%I?Ctt`X(qP" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="TOPTYPE">
+      <shadow type="type_null" id="`:VcS+?{*6pw~+kkD^7)"></shadow>
+    </value>
+    <value name="BOTTOMTYPE">
+      <shadow type="type_null" id=",KGabL,?rw1SQ@`xzgIk"></shadow>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="-`_[x.:wY2a}(_0-*.b9">
+        <mutation colour="#805ba5"></mutation>
+        <field name="HUE">270</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="?TlmZ`DfbWjVq_9/ctT-" deletable="false" movable="false" x="10" y="10">
+    <mutation connections="BOTH"></mutation>
+    <field name="NAME">kb_robot_motor_spin_right</field>
+    <field name="INLINE">INT</field>
+    <field name="CONNECTIONS">BOTH</field>
+    <statement name="INPUTS">
+      <block type="input_value" id="RB)Rh0gs)KT6GrDNYkg+">
+        <field name="INPUTNAME">speed</field>
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="ILbEv0U*|^2W*1f/,qy0">
+            <field name="TEXT">Spin Right at speed</field>
+          </block>
+        </statement>
+        <value name="TYPE">
+          <shadow type="type_null" id="ev/{OBO482WN[+{S!)g2"></shadow>
+          <block type="type_number" id="td0vn$+s-U)^HNgr)k7a"></block>
+        </value>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="]%kZbcOErUi31!e;Kx!(" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="Ic)801qcX%I?Ctt`X(qP" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="TOPTYPE">
+      <shadow type="type_null" id="`:VcS+?{*6pw~+kkD^7)"></shadow>
+    </value>
+    <value name="BOTTOMTYPE">
+      <shadow type="type_null" id=",KGabL,?rw1SQ@`xzgIk"></shadow>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="-`_[x.:wY2a}(_0-*.b9">
+        <mutation colour="#805ba5"></mutation>
+        <field name="HUE">270</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="?TlmZ`DfbWjVq_9/ctT-" deletable="false" movable="false" x="10" y="10">
+    <mutation connections="BOTH"></mutation>
+    <field name="NAME">kb_robot_motor_stop</field>
+    <field name="INLINE">INT</field>
+    <field name="CONNECTIONS">BOTH</field>
+    <statement name="INPUTS">
+      <block type="input_dummy" id="~x[nCny~jFwfx;Xam.c=">
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="ILbEv0U*|^2W*1f/,qy0">
+            <field name="TEXT">Stop Moving</field>
+          </block>
+        </statement>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="]%kZbcOErUi31!e;Kx!(" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="Ic)801qcX%I?Ctt`X(qP" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="TOPTYPE">
+      <shadow type="type_null" id="`:VcS+?{*6pw~+kkD^7)"></shadow>
+    </value>
+    <value name="BOTTOMTYPE">
+      <shadow type="type_null" id=",KGabL,?rw1SQ@`xzgIk"></shadow>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="-`_[x.:wY2a}(_0-*.b9">
+        <mutation colour="#805ba5"></mutation>
+        <field name="HUE">270</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="?TlmZ`DfbWjVq_9/ctT-" deletable="false" movable="false" x="10" y="10">
+    <mutation connections="BOTH"></mutation>
+    <field name="NAME">kb_robot_servo</field>
+    <field name="INLINE">INT</field>
+    <field name="CONNECTIONS">BOTH</field>
+    <statement name="INPUTS">
+      <block type="input_value" id="S*[8ynlrL{#3{o+,Xv:=">
+        <field name="INPUTNAME">angle</field>
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="N?qEBp247R7hW*k+gfUh">
+            <field name="TEXT">Servo </field>
+            <next>
+              <block type="field_dropdown" id="$t%%()T;IrRNRe}?F(a*">
+                <mutation options="[&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;]"></mutation>
+                <field name="FIELDNAME">n</field>
+                <field name="USER0">1</field>
+                <field name="CPU0">1</field>
+                <field name="USER1">2</field>
+                <field name="CPU1">2</field>
+                <field name="USER2">3</field>
+                <field name="CPU2">3</field>
+                <field name="USER3">4</field>
+                <field name="CPU3">4</field>
+                <next>
+                  <block type="field_static" id="+YC#}cu(AAbtn{*yS`.m">
+                    <field name="TEXT">set angle to</field>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+        <value name="TYPE">
+          <shadow type="type_null" id="ag|6oopLjY7|?/jl[hw/"></shadow>
+        </value>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="]%kZbcOErUi31!e;Kx!(" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="Ic)801qcX%I?Ctt`X(qP" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="TOPTYPE">
+      <shadow type="type_null" id="`:VcS+?{*6pw~+kkD^7)"></shadow>
+    </value>
+    <value name="BOTTOMTYPE">
+      <shadow type="type_null" id=",KGabL,?rw1SQ@`xzgIk"></shadow>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="-`_[x.:wY2a}(_0-*.b9">
+        <mutation colour="#805ba5"></mutation>
+        <field name="HUE">270</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="?TlmZ`DfbWjVq_9/ctT-" deletable="false" movable="false" x="10" y="10">
+    <mutation connections="LEFT"></mutation>
+    <field name="NAME">kb_robot_gpio_read</field>
+    <field name="INLINE">INT</field>
+    <field name="CONNECTIONS">LEFT</field>
+    <statement name="INPUTS">
+      <block type="input_dummy" id="C`}F8s$~xb+o3Ie:vpEi">
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="N?qEBp247R7hW*k+gfUh">
+            <field name="TEXT">Digital read pin</field>
+            <next>
+              <block type="field_dropdown" id="$t%%()T;IrRNRe}?F(a*">
+                <mutation options="[&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;]"></mutation>
+                <field name="FIELDNAME">n</field>
+                <field name="USER0">1</field>
+                <field name="CPU0">1</field>
+                <field name="USER1">2</field>
+                <field name="CPU1">2</field>
+                <field name="USER2">3</field>
+                <field name="CPU2">3</field>
+                <field name="USER3">4</field>
+                <field name="CPU3">4</field>
+                <field name="USER4">5</field>
+                <field name="CPU4">5</field>
+                <field name="USER5">6</field>
+                <field name="CPU5">6</field>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="]%kZbcOErUi31!e;Kx!(" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="Ic)801qcX%I?Ctt`X(qP" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="OUTPUTTYPE">
+      <shadow type="type_null" id="UbOnRIRRXMnh25|/eN-N"></shadow>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="-`_[x.:wY2a}(_0-*.b9">
+        <mutation colour="#805ba5"></mutation>
+        <field name="HUE">270</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="?TlmZ`DfbWjVq_9/ctT-" deletable="false" movable="false" x="10" y="10">
+    <mutation connections="BOTH"></mutation>
+    <field name="NAME">kb_robot_gpio_write</field>
+    <field name="INLINE">INT</field>
+    <field name="CONNECTIONS">BOTH</field>
+    <statement name="INPUTS">
+      <block type="input_value" id="S*[8ynlrL{#3{o+,Xv:=">
+        <field name="INPUTNAME">angle</field>
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="N?qEBp247R7hW*k+gfUh">
+            <field name="TEXT">Digital write pin</field>
+            <next>
+              <block type="field_dropdown" id="$t%%()T;IrRNRe}?F(a*">
+                <mutation options="[&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;]"></mutation>
+                <field name="FIELDNAME">n</field>
+                <field name="USER0">1</field>
+                <field name="CPU0">1</field>
+                <field name="USER1">2</field>
+                <field name="CPU1">2</field>
+                <field name="USER2">3</field>
+                <field name="CPU2">3</field>
+                <field name="USER3">4</field>
+                <field name="CPU3">4</field>
+                <field name="USER4">5</field>
+                <field name="CPU4">5</field>
+                <field name="USER5">6</field>
+                <field name="CPU5">6</field>
+                <next>
+                  <block type="field_static" id="+YC#}cu(AAbtn{*yS`.m">
+                    <field name="TEXT">to</field>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+        <value name="TYPE">
+          <shadow type="type_null" id="ag|6oopLjY7|?/jl[hw/"></shadow>
+          <block type="type_group" id="_hd6[H.B-[1wrXyV?K+r">
+            <mutation types="2"></mutation>
+            <value name="TYPE0">
+              <block type="type_number" id="}^r?tkcESSJMH1tdB%YC"></block>
+            </value>
+            <value name="TYPE1">
+              <block type="type_boolean" id="=Q~zT7R{Fw7q?oWI0Bh{"></block>
+            </value>
+          </block>
+        </value>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="]%kZbcOErUi31!e;Kx!(" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="Ic)801qcX%I?Ctt`X(qP" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="TOPTYPE">
+      <shadow type="type_null" id="`:VcS+?{*6pw~+kkD^7)"></shadow>
+    </value>
+    <value name="BOTTOMTYPE">
+      <shadow type="type_null" id=",KGabL,?rw1SQ@`xzgIk"></shadow>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="-`_[x.:wY2a}(_0-*.b9">
+        <mutation colour="#805ba5"></mutation>
+        <field name="HUE">270</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="?TlmZ`DfbWjVq_9/ctT-" deletable="false" movable="false" x="10" y="10">
+    <mutation connections="LEFT"></mutation>
+    <field name="NAME">kb_robot_analog_read</field>
+    <field name="INLINE">INT</field>
+    <field name="CONNECTIONS">LEFT</field>
+    <statement name="INPUTS">
+      <block type="input_dummy" id="C`}F8s$~xb+o3Ie:vpEi">
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="N?qEBp247R7hW*k+gfUh">
+            <field name="TEXT">Analog read pin</field>
+            <next>
+              <block type="field_dropdown" id="$t%%()T;IrRNRe}?F(a*">
+                <mutation options="[&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;]"></mutation>
+                <field name="FIELDNAME">n</field>
+                <field name="USER0">1</field>
+                <field name="CPU0">1</field>
+                <field name="USER1">2</field>
+                <field name="CPU1">2</field>
+                <field name="USER2">3</field>
+                <field name="CPU2">3</field>
+                <field name="USER3">4</field>
+                <field name="CPU3">4</field>
+                <field name="USER4">5</field>
+                <field name="CPU4">5</field>
+                <field name="USER5">6</field>
+                <field name="CPU5">6</field>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="]%kZbcOErUi31!e;Kx!(" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="Ic)801qcX%I?Ctt`X(qP" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="OUTPUTTYPE">
+      <shadow type="type_null" id="UbOnRIRRXMnh25|/eN-N"></shadow>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="-`_[x.:wY2a}(_0-*.b9">
+        <mutation colour="#805ba5"></mutation>
+        <field name="HUE">270</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="?TlmZ`DfbWjVq_9/ctT-" deletable="false" movable="false" x="10" y="10">
+    <mutation connections="BOTH"></mutation>
+    <field name="NAME">kb_robot_analog_write</field>
+    <field name="INLINE">INT</field>
+    <field name="CONNECTIONS">BOTH</field>
+    <statement name="INPUTS">
+      <block type="input_value" id="Q|(yJm3geH1M*;wj}sUV">
+        <field name="INPUTNAME">value</field>
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="N?qEBp247R7hW*k+gfUh">
+            <field name="TEXT">Analog write pin</field>
+            <next>
+              <block type="field_dropdown" id="$t%%()T;IrRNRe}?F(a*">
+                <mutation options="[&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;]"></mutation>
+                <field name="FIELDNAME">n</field>
+                <field name="USER0">1</field>
+                <field name="CPU0">1</field>
+                <field name="USER1">2</field>
+                <field name="CPU1">2</field>
+                <field name="USER2">3</field>
+                <field name="CPU2">3</field>
+                <field name="USER3">4</field>
+                <field name="CPU3">4</field>
+                <field name="USER4">5</field>
+                <field name="CPU4">5</field>
+                <field name="USER5">6</field>
+                <field name="CPU5">6</field>
+                <next>
+                  <block type="field_static" id="Mk[-0V#5gg}OX.gCN)Y1">
+                    <field name="TEXT">to</field>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+        <value name="TYPE">
+          <shadow type="type_null" id="C9fsjM=$.#Ojd]PLX@Vj"></shadow>
+          <block type="type_number" id="bwe]m2,mTFwHip-2KZa)"></block>
+        </value>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="]%kZbcOErUi31!e;Kx!(" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="Ic)801qcX%I?Ctt`X(qP" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="TOPTYPE">
+      <shadow type="type_null" id="iC5+OA/oUW![Q[:Uv[Fs"></shadow>
+    </value>
+    <value name="BOTTOMTYPE">
+      <shadow type="type_null" id="t4K-)wVRiLz{F6^?p}Wb"></shadow>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="-`_[x.:wY2a}(_0-*.b9">
+        <mutation colour="#805ba5"></mutation>
+        <field name="HUE">270</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="?TlmZ`DfbWjVq_9/ctT-" deletable="false" movable="false" x="10" y="10">
+    <mutation connections="LEFT"></mutation>
+    <field name="NAME">kb_robot_touch</field>
+    <field name="INLINE">INT</field>
+    <field name="CONNECTIONS">LEFT</field>
+    <statement name="INPUTS">
+      <block type="input_dummy" id="9sAzyj13c*ofs#Z1jz]-">
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="N?qEBp247R7hW*k+gfUh">
+            <field name="TEXT">Touch read pin</field>
+            <next>
+              <block type="field_dropdown" id="$t%%()T;IrRNRe}?F(a*">
+                <mutation options="[&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;]"></mutation>
+                <field name="FIELDNAME">n</field>
+                <field name="USER0">1</field>
+                <field name="CPU0">1</field>
+                <field name="USER1">2</field>
+                <field name="CPU1">2</field>
+                <field name="USER2">3</field>
+                <field name="CPU2">3</field>
+                <field name="USER3">4</field>
+                <field name="CPU3">4</field>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="]%kZbcOErUi31!e;Kx!(" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="Ic)801qcX%I?Ctt`X(qP" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="OUTPUTTYPE">
+      <shadow type="type_null" id="/5~pqSRzuTc7#P?t*rtB"></shadow>
+      <block type="type_number" id="6*Z@u!M+lwvVx[KV*Yqr"></block>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="-`_[x.:wY2a}(_0-*.b9">
+        <mutation colour="#805ba5"></mutation>
+        <field name="HUE">270</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="?TlmZ`DfbWjVq_9/ctT-" deletable="false" movable="false" x="10" y="10">
+    <mutation connections="BOTH"></mutation>
+    <field name="NAME">kb_robot_neopixel_init</field>
+    <field name="INLINE">INT</field>
+    <field name="CONNECTIONS">BOTH</field>
+    <statement name="INPUTS">
+      <block type="input_dummy" id="ZO^;])yYE}JH8U!qF):q">
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="*#i70c#nmM%0?$ANN)y/">
+            <field name="TEXT">NeoPixel initial with</field>
+            <next>
+              <block type="field_number" id="60K4k-{rpnJo|0.ln((H">
+                <field name="VALUE">0</field>
+                <field name="FIELDNAME">n</field>
+                <field name="MIN">8</field>
+                <field name="MAX">340</field>
+                <field name="PRECISION">0</field>
+                <next>
+                  <block type="field_static" id="QeuYPfz%Ux/!}1(^61D6">
+                    <field name="TEXT">leds</field>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="]%kZbcOErUi31!e;Kx!(" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="Ic)801qcX%I?Ctt`X(qP" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="TOPTYPE">
+      <shadow type="type_null" id="`:VcS+?{*6pw~+kkD^7)"></shadow>
+    </value>
+    <value name="BOTTOMTYPE">
+      <shadow type="type_null" id=",KGabL,?rw1SQ@`xzgIk"></shadow>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="-`_[x.:wY2a}(_0-*.b9">
+        <mutation colour="#805ba5"></mutation>
+        <field name="HUE">270</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="?TlmZ`DfbWjVq_9/ctT-" deletable="false" movable="false" x="10" y="10">
+    <mutation connections="BOTH"></mutation>
+    <field name="NAME">kb_robot_neopixel_setColor2</field>
+    <field name="INLINE">INT</field>
+    <field name="CONNECTIONS">BOTH</field>
+    <statement name="INPUTS">
+      <block type="input_value" id="eQCpOl1C%j5ORxqYak^B">
+        <field name="INPUTNAME">r</field>
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="*#i70c#nmM%0?$ANN)y/">
+            <field name="TEXT">NeoPixel number</field>
+            <next>
+              <block type="field_number" id="60K4k-{rpnJo|0.ln((H">
+                <field name="VALUE">0</field>
+                <field name="FIELDNAME">n</field>
+                <field name="MIN">0</field>
+                <field name="MAX">340</field>
+                <field name="PRECISION">0</field>
+                <next>
+                  <block type="field_static" id="QeuYPfz%Ux/!}1(^61D6">
+                    <field name="TEXT">set color rgb(</field>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+        <value name="TYPE">
+          <shadow type="type_null" id="`(Vw$s(IZ0Z}{|!Z/Q)o"></shadow>
+          <block type="type_number" id="%^m1[!u)^!QvL|qI4FcA"></block>
+        </value>
+        <next>
+          <block type="input_value" id="Q+z]9)v}Wn)O-V@!2IAg">
+            <field name="INPUTNAME">g</field>
+            <field name="ALIGN">LEFT</field>
+            <statement name="FIELDS">
+              <block type="field_static" id="3YEX}u.[0?H2jvV=6u4t">
+                <field name="TEXT">,</field>
+              </block>
+            </statement>
+            <value name="TYPE">
+              <shadow type="type_null" id="N1t3x+mYB~2dwMsb([U)"></shadow>
+              <block type="type_number" id="|`p9Ry/LvBlnikFyTsJ."></block>
+            </value>
+            <next>
+              <block type="input_value" id="W[hHBetZ4Efh$M:6;/;B">
+                <field name="INPUTNAME">b</field>
+                <field name="ALIGN">LEFT</field>
+                <statement name="FIELDS">
+                  <block type="field_static" id="LcppZKYj~Zh!GyQqnKIi">
+                    <field name="TEXT">,</field>
+                  </block>
+                </statement>
+                <value name="TYPE">
+                  <shadow type="type_null" id="(OqOVj4G7_n-VAK$U_!R"></shadow>
+                  <block type="type_number" id="Ova9kHF)$3?=]pG$6Jc,"></block>
+                </value>
+                <next>
+                  <block type="input_dummy" id="W=6?yE#;i7o([b3W23ie">
+                    <field name="ALIGN">LEFT</field>
+                    <statement name="FIELDS">
+                      <block type="field_static" id="L{`ig}`N]{YIr*Bn|b~y">
+                        <field name="TEXT">)</field>
+                      </block>
+                    </statement>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="]%kZbcOErUi31!e;Kx!(" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="Ic)801qcX%I?Ctt`X(qP" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="TOPTYPE">
+      <shadow type="type_null" id="`:VcS+?{*6pw~+kkD^7)"></shadow>
+    </value>
+    <value name="BOTTOMTYPE">
+      <shadow type="type_null" id=",KGabL,?rw1SQ@`xzgIk"></shadow>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="-`_[x.:wY2a}(_0-*.b9">
+        <mutation colour="#805ba5"></mutation>
+        <field name="HUE">270</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="?TlmZ`DfbWjVq_9/ctT-" deletable="false" movable="false" x="10" y="10">
+    <mutation connections="BOTH"></mutation>
+    <field name="NAME">kb_robot_neopixel_setColor</field>
+    <field name="INLINE">AUTO</field>
+    <field name="CONNECTIONS">BOTH</field>
+    <statement name="INPUTS">
+      <block type="input_dummy" id="1xvE5LOb#b!]W,7sy/E;">
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="*#i70c#nmM%0?$ANN)y/">
+            <field name="TEXT">NeoPixel number</field>
+            <next>
+              <block type="field_number" id="60K4k-{rpnJo|0.ln((H">
+                <field name="VALUE">0</field>
+                <field name="FIELDNAME">n</field>
+                <field name="MIN">0</field>
+                <field name="MAX">340</field>
+                <field name="PRECISION">0</field>
+                <next>
+                  <block type="field_static" id="QeuYPfz%Ux/!}1(^61D6">
+                    <field name="TEXT">set color to</field>
+                    <next>
+                      <block type="field_colour" id=":5NRt^|ODT55B6pg^BtN">
+                        <field name="COLOUR">#ff0000</field>
+                        <field name="FIELDNAME">color</field>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="]%kZbcOErUi31!e;Kx!(" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="Ic)801qcX%I?Ctt`X(qP" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="TOPTYPE">
+      <shadow type="type_null" id="`:VcS+?{*6pw~+kkD^7)"></shadow>
+    </value>
+    <value name="BOTTOMTYPE">
+      <shadow type="type_null" id=",KGabL,?rw1SQ@`xzgIk"></shadow>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="-`_[x.:wY2a}(_0-*.b9">
+        <mutation colour="#805ba5"></mutation>
+        <field name="HUE">270</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="?TlmZ`DfbWjVq_9/ctT-" deletable="false" movable="false" x="10" y="10">
+    <mutation connections="BOTH"></mutation>
+    <field name="NAME">kb_robot_neopixel_show</field>
+    <field name="INLINE">AUTO</field>
+    <field name="CONNECTIONS">BOTH</field>
+    <statement name="INPUTS">
+      <block type="input_dummy" id="1xvE5LOb#b!]W,7sy/E;">
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="*#i70c#nmM%0?$ANN)y/">
+            <field name="TEXT">NeoPixel show</field>
+          </block>
+        </statement>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="]%kZbcOErUi31!e;Kx!(" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="Ic)801qcX%I?Ctt`X(qP" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="TOPTYPE">
+      <shadow type="type_null" id="`:VcS+?{*6pw~+kkD^7)"></shadow>
+    </value>
+    <value name="BOTTOMTYPE">
+      <shadow type="type_null" id=",KGabL,?rw1SQ@`xzgIk"></shadow>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="-`_[x.:wY2a}(_0-*.b9">
+        <mutation colour="#805ba5"></mutation>
+        <field name="HUE">270</field>
+      </block>
+    </value>
+  </block></xml>

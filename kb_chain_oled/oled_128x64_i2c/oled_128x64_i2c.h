@@ -27,8 +27,9 @@ class OLED_128X64_I2C : public Device {
 		oled_i2c_init_t *init_ptr;
 		uint8_t flag, set_flag, clr_flag;
 		oled_chipset_t chipset;
+		bool valid_column_row(uint8_t lcd_column, uint8_t lcd_row);
+		bool valid_column_row_big(uint8_t lcd_column, uint8_t lcd_row);
 		esp_err_t render(I2CDev *i2c);
-
 	public:
 		// constructor
 		OLED_128X64_I2C(oled_chipset_t oled_chipset, int bus_ch, int dev_addr);

@@ -792,18 +792,41 @@ void OLED_128X64_I2C::process(Driver *drv) {
 	}
 }
 
+bool OLED_128X64_I2C::valid_column_row(uint8_t lcd_column, uint8_t lcd_row) {
+	// validate column,row (1-based)
+	if (((lcd_column >= 1) && (lcd_column <= (OLED_I2C_WIDTH / 6))) && ((lcd_row >= 1) && (lcd_row <= (OLED_I2C_HEIGHT / 8)))) {
+		return true;
+	}
+
+	return false;
+}
+
+bool OLED_128X64_I2C::valid_column_row_big(uint8_t lcd_column, uint8_t lcd_row) {
+	// validate column,row (1-based)
+	if (((lcd_column >= 1) && (lcd_column <= ((OLED_I2C_WIDTH / 6) - 1))) && ((lcd_row >= 1) && (lcd_row <= ((OLED_I2C_HEIGHT / 8) - 1)))) {
+		return true;
+	}
+
+	return false;
+}
+
 void OLED_128X64_I2C::putch(uint8_t lcd_column, uint8_t lcd_row, char val) {
     int i, indx, buf_indx;
 
-	// font 6x8
-    if ((lcd_row < (OLED_I2C_HEIGHT / 8)) && (lcd_column < (OLED_I2C_WIDTH / 6))) {
-		buf_indx = (lcd_row * OLED_I2C_WIDTH) + (lcd_column * 6);
-	    indx = val * 6;
-	    for (i = 0; i < 6; i++) {
-			vram[buf_indx + i] = oled_font_6_8[indx];
-	        indx++;
-	    }
+	if (!valid_column_row(lcd_column, lcd_row)) {
+		return;
 	}
+	// change to zero based
+	lcd_column--;
+	lcd_row--;
+
+	// font 6x8
+	buf_indx = (lcd_row * OLED_I2C_WIDTH) + (lcd_column * 6);
+    indx = val * 6;
+    for (i = 0; i < 6; i++) {
+		vram[buf_indx + i] = oled_font_6_8[indx];
+        indx++;
+    }
 
 	// set render flag
 	set_flag |= (0x80 | OLED_I2C_RENDER_FLAG);
@@ -812,18 +835,23 @@ void OLED_128X64_I2C::putch(uint8_t lcd_column, uint8_t lcd_row, char val) {
 void OLED_128X64_I2C::putstr(uint8_t lcd_column, uint8_t lcd_row, char *str) {
 	int i, indx, buf_indx;
 
+	if (!valid_column_row(lcd_column, lcd_row)) {
+		return;
+	}
+	// change to zero based
+	lcd_column--;
+	lcd_row--;
+
 	// font 6x8
-    if ((lcd_row < (OLED_I2C_HEIGHT / 8)) && (lcd_column < (OLED_I2C_WIDTH / 6))) {
-		buf_indx = (lcd_row * OLED_I2C_WIDTH) + (lcd_column * 6);
-		while (*str) {
-			indx = *str * 6;
-			for (i = 0; i < 6; i++) {
-				vram[buf_indx + i] = oled_font_6_8[indx];
-				indx++;
-			}
-			str++;
-			buf_indx += 6;
+	buf_indx = (lcd_row * OLED_I2C_WIDTH) + (lcd_column * 6);
+	while (*str) {
+		indx = *str * 6;
+		for (i = 0; i < 6; i++) {
+			vram[buf_indx + i] = oled_font_6_8[indx];
+			indx++;
 		}
+		str++;
+		buf_indx += 6;
 	}
 
 	// set render flag
@@ -895,21 +923,26 @@ void OLED_128X64_I2C::puthex(uint8_t lcd_column, uint8_t lcd_row, int val) {
 void OLED_128X64_I2C::putch_big(uint8_t lcd_column, uint8_t lcd_row, char val) {
     int i, j, indx, buf_indx;
 
-	// font 12x16
-	if ((lcd_row < ((OLED_I2C_HEIGHT / 8) - 1)) && (lcd_column < ((OLED_I2C_WIDTH / 6) -1))) {
-		buf_indx = (2 * lcd_row * OLED_I2C_WIDTH) + (lcd_column * 12);
-		indx = val * 24;
-		j = 0;
-		for (i = 0; i < 24; i = i + 2) {
-			vram[buf_indx + j] = oled_font_12_16[indx + i];
-			j++;
-		}
+	if (!valid_column_row_big(lcd_column, lcd_row)) {
+		return;
+	}
+	// change to zero based
+	lcd_column--;
+	lcd_row--;
 
-		j = 0;
-		for (i = 1; i < 24; i = i + 2) {
-			vram[buf_indx + j + OLED_I2C_WIDTH] = oled_font_12_16[indx + i];
-			j++;
-		}
+	// font 12x16
+	buf_indx = (2 * lcd_row * OLED_I2C_WIDTH) + (lcd_column * 12);
+	indx = val * 24;
+	j = 0;
+	for (i = 0; i < 24; i = i + 2) {
+		vram[buf_indx + j] = oled_font_12_16[indx + i];
+		j++;
+	}
+
+	j = 0;
+	for (i = 1; i < 24; i = i + 2) {
+		vram[buf_indx + j + OLED_I2C_WIDTH] = oled_font_12_16[indx + i];
+		j++;
 	}
 
 	// set render flag
@@ -919,26 +952,31 @@ void OLED_128X64_I2C::putch_big(uint8_t lcd_column, uint8_t lcd_row, char val) {
 void OLED_128X64_I2C::putstr_big(uint8_t lcd_column, uint8_t lcd_row, char *str) {
 	int i, j, indx, buf_indx;
 
+	if (!valid_column_row_big(lcd_column, lcd_row)) {
+		return;
+	}
+	// change to zero based
+	lcd_column--;
+	lcd_row--;
+
 	// font 12x16
-	if ((lcd_row < ((OLED_I2C_HEIGHT / 8) - 1)) && (lcd_column < ((OLED_I2C_WIDTH / 6) -1))) {
-		buf_indx = (lcd_row * OLED_I2C_WIDTH) + (lcd_column * 6);
-		while (*str) {
-			indx = *str * 24;
-			j = 0;
-			for (i = 0; i < 24; i = i + 2)  {
-				vram[buf_indx + j] = oled_font_12_16[indx + i];
-				j++;
-			}
-
-			j = 0;
-			for (i = 1; i < 24; i = i + 2) {
-				vram[buf_indx + j + OLED_I2C_WIDTH] = oled_font_12_16[indx + i];
-				j++;
-			}
-
-			str++;
-			buf_indx += 12;
+	buf_indx = (lcd_row * OLED_I2C_WIDTH) + (lcd_column * 6);
+	while (*str) {
+		indx = *str * 24;
+		j = 0;
+		for (i = 0; i < 24; i = i + 2)  {
+			vram[buf_indx + j] = oled_font_12_16[indx + i];
+			j++;
 		}
+
+		j = 0;
+		for (i = 1; i < 24; i = i + 2) {
+			vram[buf_indx + j + OLED_I2C_WIDTH] = oled_font_12_16[indx + i];
+			j++;
+		}
+
+		str++;
+		buf_indx += 12;
 	}
 
 	// set render flag

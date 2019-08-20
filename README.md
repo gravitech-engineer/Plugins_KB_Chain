@@ -12,6 +12,10 @@
   * KB Chain VOC Sensor
   * KB Chain Motor
   * KB Chain Thermal Infrared Sensor
+  * KB Chain OLED (Credit. gitlab: @anuchitl)
+  * KB Chain RGB [(Credit. maxpromer)] (https://github.com/maxpromer)
+  * KB Chain Proxiter [(Credit. maxpromer)] (https://github.com/maxpromer)
+  * KB Chain Barometer [(Credit. maxpromer)] (https://github.com/maxpromer)
 
 
 ### Installing

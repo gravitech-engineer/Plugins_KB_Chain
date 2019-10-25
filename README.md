@@ -16,6 +16,9 @@
   * KB Chain RGB [(Credit. maxpromer)] (https://github.com/maxpromer)
   * KB Chain Proxiter [(Credit. maxpromer)] (https://github.com/maxpromer)
   * KB Chain Barometer [(Credit. maxpromer)] (https://github.com/maxpromer)
+  * KB Chain Keypad [(Credit. maxpromer)] (https://github.com/maxpromer)
+  * KB Chain 7Segment [(Credit. maxpromer)] (https://github.com/maxpromer)
+  * KB Force Sensor [(Credit. maxpromer)] (https://github.com/maxpromer)
 
 
 ### Installing

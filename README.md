@@ -12,6 +12,10 @@
   * KB Chain VOC Sensor
   * KB Chain Motor
   * KB Chain Thermal Infrared Sensor
+  * KB Chain 8-CH 8-BIT PWM/Servo Driver
+  * KB Chain Compass
+  * KB Chain IR Receiver
+  * KB Chain Ultrasonic
   * KB Chain OLED (Credit. gitlab: @anuchitl)
   * KB Chain RGB [(Credit. maxpromer)] (https://github.com/maxpromer)
   * KB Chain Proxiter [(Credit. maxpromer)] (https://github.com/maxpromer)
